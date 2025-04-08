@@ -1,0 +1,32 @@
+.global-info {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  gap: 195px;
+  margin-bottom: 110px;
+
+  .global-info-text {
+    font-family: Rubik;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 0%;
+
+    .global-info-title {
+      font-family: Rubik;
+      font-weight: 500;
+      font-size: 35px;
+      line-height: 50px;
+      letter-spacing: 0%;
+      margin-bottom: 19px;
+    }
+    .global-info-list-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: rgba(79, 86, 101, 1);
+      margin-bottom: 15px;
+    }
+  }
+}

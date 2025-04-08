@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap");
+
+.welcome-header {
+  display: flex;
+  margin-top: 88px;
+  gap: 104px;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Rubik", sans-serif;
+}
+
+.welcome-title {
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 70px;
+  width: 555px;
+}
+
+.welcome-title span {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 70px;
+}
+
+.welcome-btn {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 25px;
+  color: #fff;
+  background-color: #f53838;
+  border-radius: 10px;
+  padding: 15px 40px;
+  box-shadow: 10px 20px 20px rgba(245, 56, 56, 0.3);
+  transition: background-color 0.3s ease;
+  font-family: "Rubik", sans-serif;
+}
+
+.welcome-btn:hover {
+  background-color: #d93030;
+}
