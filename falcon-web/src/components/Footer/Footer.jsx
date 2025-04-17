@@ -11,6 +11,7 @@ export default function Footer() {
 
 
     <footer>
+      <div class="footer-wrap">
 
       <div className='footer-left'>
 
@@ -36,7 +37,7 @@ export default function Footer() {
         </div>
 
       </div>
-
+      </div>
     </footer>
 
 

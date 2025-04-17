@@ -1,8 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap");
 
+.welcome {
+  max-width: 1240px;
+  margin: 0 auto;
+}
 .welcome-header {
   display: flex;
   margin-top: 88px;
+
   gap: 104px;
   justify-content: space-between;
   align-items: center;
