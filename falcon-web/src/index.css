@@ -46,3 +46,25 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+  }
+  
+  .app {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+  }
+  
+  .main {
+	flex: 1; 
+  }
+  
+  footer {
+	background: #f8f8f8;
+	padding: 40px;
+  }

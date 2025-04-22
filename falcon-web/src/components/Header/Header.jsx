@@ -12,7 +12,7 @@ export default function Header() {
       <div className='header-btns'>
       <ul className="header-list">
         <Link to="/" className="header-list-item"><li>O nas</li></Link>
-        <a href="#" className="header-list-item"><li>Portfolio</li></a>
+        <Link to="/portfolio" className="header-list-item"><li>Portfolio</li></Link>
         <a href="#" className="header-list-item"><li>Blog</li></a>
       </ul>
         <Link to="/contact" className='header-contact'>Kontakt</Link>

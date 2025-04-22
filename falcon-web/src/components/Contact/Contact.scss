@@ -19,7 +19,6 @@
 
   .blob {
     position: absolute;
-    pointer-events: none;
 
     &--left {
       left: 0;
@@ -28,7 +27,7 @@
       height: 250px;
       background: #000;
       border-radius: 28%;
-      transform: rotate(50deg) translateX(-50%);
+      transform: rotate(50deg) translateX(-90%);
     }
 
     &--right {
@@ -52,11 +51,10 @@
       gap: 120px;
     }
 
-    /* ---------- FORM ---------- */
     .contact-form {
       position: relative;
-      width: 340px;
-      max-width: 400px;
+      width: 500px;
+
       background: #d9d9d9;
       border-radius: 8px;
       padding: 56px;
@@ -90,7 +88,7 @@
 
       .contact-input,
       .contact-textarea {
-        width: 320px;
+        width: 460px;
         padding: 12px 16px;
         border: none;
         border-radius: 6px;
@@ -115,8 +113,6 @@
         resize: none;
       }
     }
-
-    /* ---------- INFO ---------- */
     .contact-info {
       font-family: Rubik;
       font-weight: 500;
