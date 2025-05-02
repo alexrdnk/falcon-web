@@ -1,15 +1,16 @@
 import React from 'react'
 import './Contact.scss';
-import FacebookIcon from './images/FacebookLogo.png';
-import InstagramIcon from './images/InstagramLogo.png';
-import LinkedInIcon from './images/LinkedInLogo.png';
+import FacebookIcon from './images/FacebookIcon.svg?react';
+import InstagramIcon from './images/InstagramIcon.svg?react';
+import LinkedInIcon from './images/LinkedInIcon.svg?react';
 
 
 export default function Contact() {
   return (
     <div className="contact-section">
-  <span className="blob blob--left" />
-  <span className="blob blob--right" />
+  <span className="blob blob--1" />
+  <span className="blob blob--2" />
+  <span className="blob blob--3" />
 
   <h2>Kontakt</h2>
 
@@ -32,13 +33,13 @@ export default function Contact() {
         <p className='social-text'>Nasze sociale:</p>
         <div className="social-list">
            <a href="https://www.facebook.com/profile.php?id=61566193606858" target="_blank" rel="noopener noreferrer"> {/* Add actual links later */}
-                        <img src={FacebookIcon} alt="Facebook" />
+                        <FacebookIcon/>
                     </a>
                     <a href="https://www.instagram.com/falcon.pwr/" target="_blank" rel="noopener noreferrer"> {/* Add actual links later */}
-                      <img src={InstagramIcon} alt="Instagram" />
+                      <InstagramIcon/>
                     </a>
                     <a href="https://www.linkedin.com/in/bohdan-stepanenko-219485285/" target="_blank" rel="noopener noreferrer"> {/* Add actual links later */}
-                      <img src={LinkedInIcon} alt="LinkedIn" />
+                      <LinkedInIcon/>
                     </a>
         </div>
       </div>

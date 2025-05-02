@@ -5,6 +5,12 @@ footer {
   background-size: cover;
   width: 100%;
 
+  .logo-section {
+    display: flex;
+    align-items: center;
+    max-height: 48px;
+    gap: 10px;
+  }
   .footer-wrap {
     display: flex;
     justify-content: space-between;
@@ -51,6 +57,10 @@ footer {
       align-items: flex-end;
       gap: 30px;
 
+      .pwrlogo {
+        margin: 0 auto;
+      }
+
       & > img {
         height: 135px;
         width: auto;
@@ -65,7 +75,7 @@ footer {
           display: inline-block;
         }
 
-        img {
+        svg {
           width: 35px;
           height: 35px;
           transition: transform 0.2s ease-in-out;

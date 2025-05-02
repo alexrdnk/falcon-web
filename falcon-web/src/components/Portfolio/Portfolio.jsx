@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom'
 import './Portfolio.scss'
 import Drone from "./images/drone.png"
 import Drone1 from "./images/drone1.png"
@@ -15,12 +16,12 @@ export default function Portfolio() {
             category: "Robotics / Swarm Drones",
             image: Drone,
             description: [
-              "SkyPix to system sterowania chmarą dronów umożliwiający tworzenie zsynchronizowanych animacji w powietrzu.",
-  "Projekt składa się z dwóch modułów: oprogramowania pokładowego i systemu zarządzania lotem.",
-  "Wykorzystano języki C++ i Python oraz zaawansowaną komunikację między jednostkami."
-            
+              "SkyPix to innowacyjny projekt koła naukowego FALCON, którego celem jest tworzenie zsynchronizowanych, świetlnych animacji z udziałem autonomicznych dronów.",
+              "Obecnie system składa się z trzech jednostek latających, jednak architektura została zaprojektowana z myślą o skalowalności.",
+              "Finalnie SkyPix ma obsługiwać nawet tysiące dronów jednocześnie."
+  
             ],
-            link: "#"
+            link: "/portfolio/skypix"
           },
           {
             id: 2,
@@ -28,11 +29,11 @@ export default function Portfolio() {
             category: "Embedded Development",
             image: Drone1,
             description: [
-              "Kurina to projekt robota-odkurzacza częściowo zrealizowany podczas hackathonu w 2024 roku.",
-  "System został zaprojektowany z wykorzystaniem języków C++ oraz CMake, z naciskiem na prostotę, modułowość i możliwość dalszego rozwoju.",
-  "Kurina stanowi połączenie elektroniki, programowania i praktycznego zastosowania systemów wbudowanych."
+             "Kurīnā (クリーナー – „Cleaner”) to inteligentny robot odkurzający rozwijany przez koło naukowe FALCON.",
+  "Projekt łączy autorską elektronikę i oprogramowanie, zapoczątkowany podczas Hackathonu w 2024 roku.",
+  "Robot działa autonomicznie dzięki czujnikom i algorytmom, a użytkownik może go obsługiwać z poziomu aplikacji mobilnej."
             ],
-            link: "#"
+            link: "/portfolio/kurina"
           },
           {
             id: 3,
@@ -40,11 +41,11 @@ export default function Portfolio() {
             category: "Flight Control / Firmware",
             image: Drone,
             description: [
-                "Betterflight to nowoczesny firmware dla dronów, inspirowany Betaflight i INAV.",
-                "Projekt wykorzystuje język Rust do zapewnienia wysokiej wydajności i bezpieczeństwa lotu.",
-                "System umożliwia elastyczną konfigurację oraz precyzyjne sterowanie ruchem UAV."
+                "BetterFlight to nowoczesne oprogramowanie dla kontrolerów lotu dronów, stworzone jako alternatywa dla Betaflight, lecz w całości napisane w języku Rust.",
+  "Projekt powstał z myślą o zwiększeniu efektywności, bezpieczeństwa i czytelności kodu.",
+  "Całość została zaprojektowana bez kompromisów w zakresie wydajności."
             ],
-            link: "#"
+            link: "/portfolio/betterflight"
           },
           {
             id: 4,
@@ -56,7 +57,7 @@ export default function Portfolio() {
                 "Zawiera informacje o projektach, członkach, aktualnościach i wydarzeniach.",
                 "Wdrożona przy użyciu HTML, CSS i JavaScript z responsywnym designem."
             ],
-            link: "#"
+            link: "/portfolio/falconweb"
           },
           {
             id: 5,
@@ -68,7 +69,7 @@ export default function Portfolio() {
                 "Obsługuje przypisywanie uprawnień, autoryzację członków i moderację treści.",
                 "Zaprogramowany w Pythonie z myślą o prostocie i niezawodności."
             ],
-            link: "#"
+            link: "/portfolio/falconbot"
           }
         ]
       };
@@ -106,7 +107,7 @@ export default function Portfolio() {
     ))}
   </div>
 
-  <a href={project.link} className="see-more">See more →</a>
+  <Link to={project.link} className="see-more">See more →</Link>
 </div>
   </div>
 ))}

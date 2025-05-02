@@ -1,10 +1,11 @@
 import React from 'react'
 import "./Footer.scss"
-import FalconLogo from '../../images/Logo.svg'
-import PwrLogo from './images/LogoPwr.png';
-import FacebookIcon from './images/FacebookLogo.png';
-import InstagramIcon from './images/InstagramLogo.png';
-import LinkedInIcon from './images/LinkedInLogo.png';
+import FalconLogoText from '../../images/Logo.svg?react'
+import FalconLogo from '../../images/Logo2.svg?react'
+import PWRLogo from './images/PWRLogo.svg?react';
+import FacebookIcon from './images/FacebookIcon.svg?react';
+import InstagramIcon from './images/InstagramIcon.svg?react';
+import LinkedInIcon from './images/LinkedInIcon.svg?react';
 
 export default function Footer() {
   return (
@@ -15,7 +16,7 @@ export default function Footer() {
 
       <div className='footer-left'>
 
-        <img src={FalconLogo} alt="logo"/>
+        <div className='logo-section'><FalconLogo/><FalconLogoText/></div>
         <p className='footer-text'>
         Jesteśmy interdyscyplinarnym kołem naukowym <span>FALCON</span>, działającym przy Politechnice Wrocławskiej. Tworzymy zespół studentów zafascynowanych projektowaniem dronów oraz nowoczesnymi technologiami.
         </p>
@@ -23,16 +24,16 @@ export default function Footer() {
       </div>
 
       <div className='footer-right'>
-      <img src={PwrLogo} alt="pwr-logo"/>
+      <PWRLogo className="pwrlogo"/>
         <div className='footer-socials'>
           <a href="https://www.facebook.com/profile.php?id=61566193606858" target="_blank" rel="noopener noreferrer"> {/* Add actual links later */}
-              <img src={FacebookIcon} alt="Facebook" />
+             <FacebookIcon/>
           </a>
           <a href="https://www.instagram.com/falcon.pwr/" target="_blank" rel="noopener noreferrer"> {/* Add actual links later */}
-            <img src={InstagramIcon} alt="Instagram" />
+            <InstagramIcon/>
           </a>
           <a href="https://www.linkedin.com/in/bohdan-stepanenko-219485285/" target="_blank" rel="noopener noreferrer"> {/* Add actual links later */}
-            <img src={LinkedInIcon} alt="LinkedIn" />
+            <LinkedInIcon/>
           </a>
         </div>
 

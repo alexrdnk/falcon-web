@@ -9,6 +9,13 @@
   z-index: 1000;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 
+  .logo-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-height: 50px;
+  }
+
   .header-wrap {
     display: flex;
     max-width: 1240px;
