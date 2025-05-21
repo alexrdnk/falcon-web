@@ -14,6 +14,7 @@ export default function Header() {
       <ul className="header-list">
         <Link to="/" className="header-list-item"><li>O nas</li></Link>
         <Link to="/portfolio" className="header-list-item"><li>Portfolio</li></Link>
+        <Link to="/" className="header-list-item"><li>Team</li></Link>
         <a href="#" className="header-list-item"><li>Blog</li></a>
       </ul>
         <Link to="/contact" className='header-contact'>Kontakt</Link>
