@@ -61,10 +61,6 @@ html, body {
   }
   
   .main {
-	flex: 1; 
-  }
-  
-  footer {
-	background: #f8f8f8;
-	padding: 40px;
+	flex: 1;
+	padding-top: 80px; /* Dodajemy padding-top dla fixed header */
   }

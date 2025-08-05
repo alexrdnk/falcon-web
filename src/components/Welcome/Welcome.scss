@@ -1,13 +1,82 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap");
 
 .welcome {
-  max-width: 1240px;
-  margin: 0 auto;
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+      linear-gradient(135deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.6) 100%),
+      radial-gradient(circle at 30% 70%, rgba(245, 56, 56, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 70% 30%, rgba(245, 56, 56, 0.05) 0%, transparent 50%);
+    z-index: 1;
+  }
+  
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+      linear-gradient(90deg, transparent 0%, transparent 20%, rgba(255, 255, 255, 0.05) 20%, rgba(255, 255, 255, 0.05) 21%, transparent 21%, transparent 40%, rgba(255, 255, 255, 0.05) 40%, rgba(255, 255, 255, 0.05) 41%, transparent 41%, transparent 60%, rgba(255, 255, 255, 0.05) 60%, rgba(255, 255, 255, 0.05) 61%, transparent 61%, transparent 80%, rgba(255, 255, 255, 0.05) 80%, rgba(255, 255, 255, 0.05) 81%, transparent 81%);
+    background-size: 200px 200px;
+    animation: shimmer 20s linear infinite;
+    z-index: 1;
+  }
 }
+
+@keyframes shimmer {
+  0% { transform: translateX(-100px) translateY(-100px); }
+  100% { transform: translateX(100px) translateY(100px); }
+}
+
+.welcome-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.welcome-content {
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .welcome-header {
   display: flex;
   margin-top: 88px;
-
   gap: 104px;
   justify-content: space-between;
   align-items: center;
@@ -19,12 +88,50 @@
   font-size: 50px;
   line-height: 70px;
   width: 555px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  animation: slideInLeft 1.2s ease-out 0.3s both;
+  
+  span {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 70px;
+    background: linear-gradient(135deg, #f53838, #ff6b6b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: none;
+    position: relative;
+    
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: linear-gradient(135deg, #f53838, #ff6b6b);
+      transform: scaleX(0);
+      animation: underline 1s ease-out 1.5s forwards;
+    }
+  }
 }
 
-.welcome-title span {
-  font-weight: 700;
-  font-size: 50px;
-  line-height: 70px;
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes underline {
+  to {
+    transform: scaleX(1);
+  }
 }
 
 .welcome-btn {
@@ -34,14 +141,65 @@
   font-size: 16px;
   line-height: 25px;
   color: #fff;
-  background-color: #f53838;
-  border-radius: 10px;
-  padding: 15px 40px;
-  box-shadow: 10px 20px 20px rgba(245, 56, 56, 0.3);
-  transition: background-color 0.3s ease;
+  background: linear-gradient(135deg, #f53838, #ff6b6b);
+  border-radius: 12px;
+  padding: 18px 45px;
+  box-shadow: 
+    0px 15px 35px rgba(245, 56, 56, 0.4),
+    0px 8px 20px rgba(245, 56, 56, 0.3);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   font-family: "Rubik", sans-serif;
+  margin-top: 30px;
+  position: relative;
+  overflow: hidden;
+  animation: fadeInUp 1s ease-out 0.6s both;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s ease;
+  }
+  
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 
+      0px 20px 45px rgba(245, 56, 56, 0.5),
+      0px 12px 25px rgba(245, 56, 56, 0.4);
+    
+    &::before {
+      left: 100%;
+    }
+  }
+  
+  &:active {
+    transform: translateY(-1px);
+  }
 }
 
-.welcome-btn:hover {
-  background-color: #d93030;
+// Responsive design
+@media (max-width: 768px) {
+  .welcome {
+    height: 500px;
+  }
+  
+  .welcome-title {
+    font-size: 36px;
+    line-height: 48px;
+    width: 100%;
+    
+    span {
+      font-size: 36px;
+      line-height: 48px;
+    }
+  }
+  
+  .welcome-btn {
+    padding: 16px 35px;
+    font-size: 15px;
+  }
 }

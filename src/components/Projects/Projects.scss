@@ -1,62 +1,20 @@
 .project-page {
   font-family: "Rubik", sans-serif;
-  color: #1a1a1a;
+  color: #0b132a;
   position: relative;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  min-height: 100vh;
 
   &__not-found {
     text-align: center;
     margin-top: 5rem;
     font-size: 1.5rem;
-  }
-  .blob {
-    position: absolute;
-    border-radius: 50%;
-    z-index: -1;
-
-    &--1 {
-      top: 10%;
-      left: 20px;
-      width: 160px;
-      height: 160px;
-      background-color: #000;
-    }
-
-    &--2 {
-      top: 40%;
-      right: 50px;
-      width: 200px;
-      height: 200px;
-      background-color: #000;
-    }
-
-    &--3 {
-      top: 75%;
-      left: -80px;
-      width: 120px;
-      height: 120px;
-      background-color: #ff0000;
-    }
-
-    &--4 {
-      bottom: 15%;
-      right: -90px;
-      width: 140px;
-      height: 140px;
-      background-color: #ff0000;
-    }
-
-    &--5 {
-      top: 5%;
-      right: 10%;
-      width: 100px;
-      height: 100px;
-      background-color: #ff0000;
-    }
+    color: #4f5665;
   }
 
   &__hero {
     position: relative;
-    height: 60vh;
+    height: 50vh;
     overflow: hidden;
     background: #000;
 
@@ -64,7 +22,7 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      opacity: 0.6;
+      opacity: 0.7;
     }
 
     &-overlay {
@@ -76,78 +34,112 @@
       align-items: center;
       color: white;
       z-index: 1;
+      background: linear-gradient(135deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.6) 100%);
     }
   }
 
   &__title {
     font-size: 3rem;
     font-weight: 700;
-    margin-bottom: 50px;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #f53838 0%, #ff6b6b 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 
   &__subtitle {
     font-size: 1.25rem;
     font-weight: 400;
+    color: #ffffff;
   }
 
   &__content {
-    max-width: 960px;
+    max-width: 900px;
     margin: 0 auto;
-    padding: 3rem 1.5rem;
+    padding: 4rem 2rem;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    margin-top: -3rem;
+    position: relative;
+    z-index: 2;
+    box-shadow: 
+      0px 15px 35px rgba(0, 0, 0, 0.08),
+      0px 8px 20px rgba(0, 0, 0, 0.04);
   }
 
   &__full-title {
-    font-size: 1.75rem;
-    font-weight: 600;
+    font-size: 2rem;
+    font-weight: 700;
     margin-bottom: 2rem;
+    color: #0b132a;
+    background: linear-gradient(135deg, #f53838 0%, #ff6b6b 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 
   &__section {
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
 
     &-title {
       font-weight: 600;
-      font-size: 1.125rem;
-      margin-bottom: 0.5rem;
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+      color: #0b132a;
     }
   }
 
   &__paragraph {
     font-size: 1rem;
-    line-height: 1.7;
-    color: #333;
-    margin-bottom: 0.5rem;
+    line-height: 1.8;
+    color: #4f5665;
+    margin-bottom: 1rem;
   }
 
   &__team {
-    max-width: 960px;
+    max-width: 900px;
     margin: 0 auto;
-    padding: 2rem 1.5rem;
+    padding: 2rem;
+    margin-top: 2rem;
 
     &-title {
-      font-size: 1.5rem;
-      font-weight: 600;
-      margin-bottom: 1.5rem;
+      font-size: 1.75rem;
+      font-weight: 700;
+      margin-bottom: 2rem;
+      text-align: center;
+      color: #0b132a;
+      background: linear-gradient(135deg, #f53838 0%, #ff6b6b 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
     }
 
     &-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
     }
 
     &-member {
-      background: #f8f8f8;
-      border-radius: 0.75rem;
-      padding: 40px 20px;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      border-radius: 15px;
+      padding: 2rem;
       text-align: center;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-      transition: transform 0.9s ease, box-shadow 0.9s ease;
+      box-shadow: 
+        0px 10px 30px rgba(0, 0, 0, 0.08),
+        0px 5px 15px rgba(0, 0, 0, 0.04);
+      transition: all 0.3s ease;
+      border: 1px solid rgba(245, 56, 56, 0.1);
 
       &:hover {
-        transform: translateY(-1px) scale(1.03);
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-        background: #ffffff;
+        transform: translateY(-5px);
+        box-shadow: 
+          0px 20px 45px rgba(245, 56, 56, 0.15),
+          0px 12px 25px rgba(245, 56, 56, 0.1);
+        border-color: rgba(245, 56, 56, 0.3);
       }
     }
 
@@ -156,34 +148,97 @@
       height: 80px;
       border-radius: 50%;
       object-fit: cover;
-      margin-bottom: 30px;
+      margin-bottom: 1rem;
+      border: 3px solid rgba(245, 56, 56, 0.2);
     }
 
     &-name {
       font-weight: 600;
-      margin-bottom: 10px;
+      margin-bottom: 0.5rem;
+      color: #0b132a;
+      font-size: 1.1rem;
     }
 
     &-role {
-      font-size: 0.875rem;
-      color: #666;
+      font-size: 0.9rem;
+      color: #4f5665;
+      margin-bottom: 1rem;
     }
+
     &-socials {
-      margin-top: 12px;
       display: flex;
       justify-content: center;
-      gap: 16px;
+      gap: 1rem;
 
       a {
         font-size: 1.2rem;
-        color: #666;
-        transition: color 0.3s ease, transform 0.3s ease;
+        color: #4f5665;
+        transition: all 0.3s ease;
 
         &:hover {
-          color: #2563eb;
-          transform: scale(1.2);
+          color: #f53838;
+          transform: scale(1.1);
         }
       }
+    }
+  }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .project-page {
+    &__hero {
+      height: 40vh;
+    }
+
+    &__title {
+      font-size: 2rem;
+    }
+
+    &__subtitle {
+      font-size: 1rem;
+    }
+
+    &__content {
+      padding: 2rem 1rem;
+      margin-top: -2rem;
+    }
+
+    &__full-title {
+      font-size: 1.5rem;
+    }
+
+    &__team {
+      padding: 1rem;
+
+      &-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 1rem;
+      }
+
+      &-member {
+        padding: 1.5rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .project-page {
+    &__hero {
+      height: 30vh;
+    }
+
+    &__title {
+      font-size: 1.5rem;
+    }
+
+    &__content {
+      padding: 1.5rem 1rem;
+    }
+
+    &__full-title {
+      font-size: 1.25rem;
     }
   }
 }

@@ -158,11 +158,6 @@ const projects = {
     return (
       <div className="project-page">
         {/* Hero section */}
-        <span className="blob blob--1" />
-  <span className="blob blob--2" />
-  <span className="blob blob--3" />
-  <span className="blob blob--4" />
-  <span className="blob blob--5" />
         <div className="project-page__hero">
           <img src={project.image} alt={project.title} className="project-page__hero-image" />
           <div className="project-page__hero-overlay">

@@ -7,8 +7,8 @@ import Drone1 from "./images/drone1.png"
 
 export default function Portfolio() {
     const portfolioProjects = {
-        title: "Our Projects",
-        subtitle: "Innowacje, które latają. Projekty, które inspirują.",
+        title: "Nasze Projekty",
+        subtitle: "Innowacje, które latają. Projekty, które inspirują",
         projects: [
           {
             id: 1,
@@ -29,7 +29,7 @@ export default function Portfolio() {
             category: "Embedded Development",
             image: Drone1,
             description: [
-             "Kurīnā (クリーナー – „Cleaner”) to inteligentny robot odkurzający rozwijany przez koło naukowe FALCON.",
+             "Kurīnā (クリーナー – \"Cleaner\") to inteligentny robot odkurzający rozwijany przez koło naukowe FALCON.",
   "Projekt łączy autorską elektronikę i oprogramowanie, zapoczątkowany podczas Hackathonu w 2024 roku.",
   "Robot działa autonomicznie dzięki czujnikom i algorytmom, a użytkownik może go obsługiwać z poziomu aplikacji mobilnej."
             ],
@@ -76,42 +76,37 @@ export default function Portfolio() {
 
   return (
     <div className='portfolio'>
-        <span className="blob blob--1" />
-  <span className="blob blob--2" />
-  <span className="blob blob--3" />
-  <span className="blob blob--4" />
-  <span className="blob blob--5" />
-    <div className="portfolio-wrap">
-    
-      <h1 className="portfolio-title">{portfolioProjects.title}</h1>
-      <h2 class="portfolio-subtitle">{portfolioProjects.subtitle}</h2>
+        <div className="portfolio-wrap">
+            <h1 className="portfolio-title">{portfolioProjects.title}</h1>
+            <h2 className="portfolio-subtitle">{portfolioProjects.subtitle}</h2>
 
-      {portfolioProjects.projects.map((project, index) => (
-  <div
-    className={`project-block ${index % 2 === 0 ? 'left' : 'right'}`}
-    key={project.id}
-  >
-    <div className="project-image">
-      <img src={project.image} alt={project.title} />
-    </div>
+            {portfolioProjects.projects.map((project, index) => (
+                <div className="project-block" key={project.id}>
+                    <div className={`project-card ${index % 2 === 0 ? 'left' : 'right'}`}>
+                        <div className="project-image">
+                            <img src={project.image} alt={project.title} />
+                        </div>
 
-    <div className="project-text">
-  <div className="project-header">
-    <h2>{project.title}</h2>
-    <span className="category">{project.category}</span>
-  </div>
+                        <div className="project-text">
+                            <div className="project-header">
+                                <h2>{project.title}</h2>
+                                <span className="category">{project.category}</span>
+                            </div>
 
-  <div className="project-content">
-    {project.description.map((line, idx) => (
-      <p key={idx}>{line}</p>
-    ))}
-  </div>
+                            <div className="project-content">
+                                {project.description.map((line, idx) => (
+                                    <p key={idx}>{line}</p>
+                                ))}
+                            </div>
 
-  <Link to={project.link} className="see-more">See more →</Link>
-</div>
-  </div>
-))}
-    </div>
+                            <Link to={project.link} className="see-more">
+                                Zobacz więcej →
+                            </Link>
+                        </div>
+                    </div>
+                </div>
+            ))}
+        </div>
     </div>
   );
 }
