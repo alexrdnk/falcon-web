@@ -68,6 +68,19 @@ export default function Departments() {
         </svg>
       ),
       projects: ['Marketing', 'Social Media', 'Events']
+    },
+    {
+      id: 5,
+      name: 'DevOps',
+      description: 'Automatyzacja infrastruktury i procesów CI/CD',
+      longDescription: 'Zajmujemy się projektowaniem, wdrażaniem i utrzymaniem procesów Continuous Integration i Continuous Deployment, zarządzaniem infrastrukturą w chmurze oraz monitorowaniem i zapewnianiem niezawodności systemów.',
+      icon: (
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2C6.48 2 2 6.48 2 12h2a8 8 0 1116 0h2c0-5.52-4.48-10-10-10z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            <path d="M12 6v6l4 2" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
+      ),
+      projects: ['CI/CD', 'Infrastruktura jako kod', 'Monitoring', 'Utrzymanie']
     }
   ]
 
