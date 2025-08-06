@@ -6,7 +6,7 @@ import PortfolioPage from "./pages/PortfolioPage.jsx";
 import BlogPage from "./pages/BlogPage.jsx";
 import TeamPage from "./pages/TeamPage.jsx";
 import "./App.css"
-import "../../public/index.css"
+import "../../index.css"
 import Footer from "../components/Layouts/Footer/Footer.jsx";
 import Header from "../components/Layouts/Header/Header.jsx";
 import Projects from "../components/PortfolioPage/Projects/Projects.jsx";
