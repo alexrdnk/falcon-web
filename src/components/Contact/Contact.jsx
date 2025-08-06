@@ -43,7 +43,7 @@ export default function Contact() {
                     <a href="https://www.instagram.com/falcon.pwr/" target="_blank" rel="noopener noreferrer">
                       <InstagramIcon/>
                     </a>
-                    <a href="https://www.linkedin.com/in/bohdan-stepanenko-219485285/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/company/kn-falcon/" target="_blank" rel="noopener noreferrer">
                       <LinkedInIcon/>
                     </a>
             </div>

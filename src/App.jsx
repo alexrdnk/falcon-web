@@ -4,6 +4,7 @@ import HomePage from './Pages/HomePage.jsx'
 import ContactPage from './Pages/ContactPage.jsx'
 import PortfolioPage from "./Pages/PortfolioPage.jsx";
 import BlogPage from "./Pages/BlogPage.jsx";
+import TeamPage from "./Pages/TeamPage.jsx";
 import "./App.css"
 import "./index.css"
 import Footer from "./components/Footer/Footer.jsx";
@@ -21,7 +22,7 @@ function App() {
       <Route path='/contact' element={<ContactPage/>}/>
       <Route path='/portfolio' element={<PortfolioPage/>}/>
       <Route path="/portfolio/:slug" element={<Projects />} />
-      <Route path='/team' element={<HomePage/>}/>
+      <Route path='/team' element={<TeamPage/>}/>
       <Route path='/blog' element={<BlogPage/>}/>
       <Route path="/blog/:slug" element={<Events />} />
     </Routes>

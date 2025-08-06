@@ -6,10 +6,10 @@
   position: relative;
   overflow: hidden;
   border-top: 3px solid #f53838;
-  box-shadow: 
-    0px -10px 30px rgba(245, 56, 56, 0.1),
-    0px -5px 15px rgba(245, 56, 56, 0.05);
-  
+  box-shadow:
+          0px -10px 30px rgba(245, 56, 56, 0.1),
+          0px -5px 15px rgba(245, 56, 56, 0.05);
+
   &::before {
     content: '';
     position: absolute;
@@ -20,7 +20,7 @@
     background: linear-gradient(90deg, transparent, #f53838, transparent);
     opacity: 0.3;
   }
-  
+
   &::after {
     content: '';
     position: absolute;
@@ -28,9 +28,9 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: 
-      radial-gradient(circle at 20% 80%, rgba(245, 56, 56, 0.08) 0%, transparent 50%),
-      radial-gradient(circle at 80% 20%, rgba(255, 107, 107, 0.05) 0%, transparent 50%);
+    background:
+            radial-gradient(circle at 20% 80%, rgba(245, 56, 56, 0.08) 0%, transparent 50%),
+            radial-gradient(circle at 80% 20%, rgba(255, 107, 107, 0.05) 0%, transparent 50%);
     z-index: 0;
   }
 
@@ -53,20 +53,20 @@
     &.footer-left {
       .footer-logo {
         margin-bottom: 30px;
-        
+
         .logo-wrapper {
           display: flex;
           align-items: center;
           gap: 16px;
           margin-bottom: 20px;
-          
+
           .logo-icon {
             width: 50px;
             height: 50px;
             transition: all 0.3s ease;
             filter: drop-shadow(0px 4px 12px rgba(245, 56, 56, 0.3));
           }
-          
+
           .logo-text {
             height: 40px;
             width: auto;
@@ -74,7 +74,7 @@
             filter: drop-shadow(0px 2px 8px rgba(0, 0, 0, 0.1));
           }
         }
-        
+
         .footer-description {
           font-family: "Rubik", sans-serif;
           font-weight: 400;
@@ -82,13 +82,13 @@
           line-height: 1.8;
           color: #4f5665;
           margin: 0;
-          
+
           .highlight {
             font-weight: 700;
             color: #f53838;
             text-shadow: 0px 0px 10px rgba(245, 56, 56, 0.3);
             position: relative;
-            
+
             &::after {
               content: '';
               position: absolute;
@@ -102,14 +102,14 @@
           }
         }
       }
-      
+
       .footer-info {
         .info-item {
           display: flex;
           align-items: center;
           gap: 16px;
           margin-bottom: 12px;
-          
+
           .info-label {
             font-family: "Rubik", sans-serif;
             font-weight: 600;
@@ -117,7 +117,7 @@
             color: #f53838;
             min-width: 80px;
             position: relative;
-            
+
             &::after {
               content: '';
               position: absolute;
@@ -128,7 +128,7 @@
               background: linear-gradient(135deg, #f53838, #ff6b6b);
             }
           }
-          
+
           .info-link {
             font-family: "Rubik", sans-serif;
             font-weight: 400;
@@ -136,13 +136,13 @@
             color: #4f5665;
             text-decoration: none;
             transition: all 0.3s ease;
-            
+
             &:hover {
               color: #f53838;
               text-shadow: 0px 0px 8px rgba(245, 56, 56, 0.2);
             }
           }
-          
+
           .info-text {
             font-family: "Rubik", sans-serif;
             font-weight: 400;
@@ -152,7 +152,7 @@
         }
       }
     }
-    
+
     &.footer-center {
       .footer-links {
         .links-title {
@@ -163,7 +163,7 @@
           margin: 0 0 20px 0;
           position: relative;
           padding-bottom: 8px;
-          
+
           &::after {
             content: '';
             position: absolute;
@@ -175,15 +175,15 @@
             border-radius: 1px;
           }
         }
-        
+
         .links-list {
           list-style: none;
           margin: 0;
           padding: 0;
-          
+
           li {
             margin-bottom: 12px;
-            
+
             .footer-link {
               font-family: "Rubik", sans-serif;
               font-weight: 400;
@@ -194,7 +194,7 @@
               position: relative;
               padding: 6px 0;
               display: block;
-              
+
               &::before {
                 content: '';
                 position: absolute;
@@ -205,10 +205,10 @@
                 background: linear-gradient(135deg, #f53838, #ff6b6b);
                 transition: width 0.3s ease;
               }
-              
+
               &:hover {
                 color: #f53838;
-                
+
                 &::before {
                   width: 100%;
                 }
@@ -218,11 +218,11 @@
         }
       }
     }
-    
+
     &.footer-right {
       .footer-partners {
         margin-bottom: 40px;
-        
+
         .partners-title {
           font-family: "Rubik", sans-serif;
           font-weight: 600;
@@ -231,7 +231,7 @@
           margin: 0 0 20px 0;
           position: relative;
           padding-bottom: 8px;
-          
+
           &::after {
             content: '';
             position: absolute;
@@ -243,19 +243,19 @@
             border-radius: 1px;
           }
         }
-        
+
         .partner-logo {
           display: flex;
           align-items: center;
           gap: 16px;
-          
+
           .pwr-logo {
             width: 60px;
             height: auto;
             transition: all 0.3s ease;
             filter: drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.1));
           }
-          
+
           .partner-name {
             font-family: "Rubik", sans-serif;
             font-weight: 500;
@@ -264,7 +264,7 @@
           }
         }
       }
-      
+
       .footer-socials {
         .socials-title {
           font-family: "Rubik", sans-serif;
@@ -274,7 +274,7 @@
           margin: 0 0 20px 0;
           position: relative;
           padding-bottom: 8px;
-          
+
           &::after {
             content: '';
             position: absolute;
@@ -286,26 +286,44 @@
             border-radius: 1px;
           }
         }
-        
+
         .social-links {
           display: flex;
           flex-direction: column;
-          gap: 10px;
+          gap: 12px;
           
           .social-link {
-            display: flex;
-            align-items: center;
+            display: flex !important;
+            align-items: center !important;
             gap: 12px;
             text-decoration: none;
-            padding: 8px 0;
+            padding: 8px 12px !important;
             transition: all 0.3s ease;
+            position: relative;
+            background: transparent !important;
+            border-radius: 8px;
+            width: auto !important;
+            height: auto !important;
+            justify-content: flex-start !important;
+            border: none !important;
+            box-shadow: none !important;
+            min-height: auto !important;
+            max-width: none !important;
+            margin: 0 !important;
+            outline: none !important;
+            color: inherit !important;
             
             &:hover {
               transform: translateX(5px);
+              background: rgba(245, 56, 56, 0.05) !important;
+              box-shadow: none !important;
+              color: inherit !important;
+              border-color: transparent !important;
+              outline: none !important;
               
               svg {
-                transform: scale(1.1);
-                filter: drop-shadow(0px 0px 8px rgba(245, 56, 56, 0.3));
+                transform: scale(1.05);
+                filter: drop-shadow(0px 2px 4px rgba(245, 56, 56, 0.2));
               }
               
               .social-name {
@@ -318,6 +336,10 @@
               height: 20px;
               color: #4f5665;
               transition: all 0.3s ease;
+              display: block;
+              flex-shrink: 0;
+              fill: currentColor;
+              background: transparent;
             }
             
             .social-name {
@@ -326,6 +348,8 @@
               font-size: 14px;
               color: #4f5665;
               transition: all 0.3s ease;
+              background: transparent;
+              line-height: 1;
             }
           }
         }
@@ -336,16 +360,16 @@
   .footer-bottom {
     border-top: 1px solid rgba(245, 56, 56, 0.1);
     padding-top: 30px;
-    
+
     .footer-divider {
       height: 1px;
       background: linear-gradient(90deg, transparent, #f53838, transparent);
       margin-bottom: 20px;
     }
-    
+
     .footer-copyright {
       text-align: center;
-      
+
       p {
         font-family: "Rubik", sans-serif;
         font-weight: 400;
@@ -353,7 +377,7 @@
         color: #9ca3af;
         margin: 0 0 8px 0;
       }
-      
+
       .copyright-subtitle {
         font-size: 12px;
         color: #6b7280;
@@ -370,7 +394,7 @@
       grid-template-columns: 1fr 1fr;
       gap: 40px;
     }
-    
+
     .footer-section.footer-left {
       grid-column: 1 / -1;
     }
@@ -382,12 +406,12 @@
     .footer-container {
       padding: 60px 20px 30px;
     }
-    
+
     .footer-content {
       grid-template-columns: 1fr;
       gap: 40px;
     }
-    
+
     .footer-section {
       &.footer-left {
         .footer-info {
@@ -398,7 +422,7 @@
           }
         }
       }
-      
+
       &.footer-right {
         .footer-partners {
           margin-bottom: 30px;
@@ -413,11 +437,11 @@
     .footer-container {
       padding: 40px 15px 20px;
     }
-    
+
     .footer-content {
       gap: 30px;
     }
-    
+
     .footer-section {
       &.footer-left {
         .footer-logo {
@@ -426,7 +450,7 @@
               width: 32px;
               height: 32px;
             }
-            
+
             .logo-text {
               height: 24px;
             }
