@@ -28,7 +28,7 @@
     position: relative;
 
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       bottom: -10px;
       left: 50%;
@@ -57,14 +57,13 @@
     display: flex;
     justify-content: center;
     gap: 1rem;
-    margin-bottom: 4rem; 
+    margin-bottom: 4rem;
     flex-wrap: wrap;
     padding: 2rem;
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
     border-radius: 20px;
-    box-shadow: 
-      0px 15px 35px rgba(0, 0, 0, 0.08),
+    box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.08),
       0px 8px 20px rgba(0, 0, 0, 0.04);
     border: 1px solid rgba(245, 56, 56, 0.1);
   }
@@ -85,8 +84,7 @@
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
     border-radius: 20px;
-    box-shadow: 
-      0px 15px 35px rgba(0, 0, 0, 0.08),
+    box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.08),
       0px 8px 20px rgba(0, 0, 0, 0.04);
     border: 1px solid rgba(245, 56, 56, 0.1);
   }
@@ -96,15 +94,14 @@
     backdrop-filter: blur(10px);
     border-radius: 20px;
     padding: 3rem;
-    box-shadow: 
-      0px 15px 35px rgba(0, 0, 0, 0.08),
+    box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.08),
       0px 8px 20px rgba(0, 0, 0, 0.04);
     border: 1px solid rgba(245, 56, 56, 0.1);
     position: relative;
     overflow: hidden;
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       top: 0;
       left: 0;
@@ -147,8 +144,7 @@
   border-radius: 15px;
   padding: 2rem;
   text-align: center;
-  box-shadow: 
-    0px 10px 30px rgba(0, 0, 0, 0.08),
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.08),
     0px 5px 15px rgba(0, 0, 0, 0.04);
   border: 1px solid rgba(245, 56, 56, 0.1);
   transition: all 0.3s ease;
@@ -156,7 +152,7 @@
   overflow: hidden;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -169,8 +165,7 @@
 
   &:hover {
     transform: translateY(-8px);
-    box-shadow: 
-      0px 20px 45px rgba(245, 56, 56, 0.15),
+    box-shadow: 0px 20px 45px rgba(245, 56, 56, 0.15),
       0px 12px 25px rgba(245, 56, 56, 0.1);
     border-color: rgba(245, 56, 56, 0.3);
 
@@ -260,7 +255,7 @@
   }
 
   &.github:hover {
-    background: #333;
+    background: #25252538;
   }
 }
 
@@ -367,7 +362,8 @@
 }
 
 @keyframes float {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0px);
   }
   50% {
@@ -580,4 +576,4 @@
     opacity: 1;
     transform: translateY(0);
   }
-} 
+}

@@ -33,7 +33,7 @@ const Blog = () => {
   ];
 
   const handleBlogClick = () => {
-    navigate('/portfolio'); // Tymczasowo do portfolio
+    navigate('/blog'); // Tymczasowo do portfolio
   };
 
   return (

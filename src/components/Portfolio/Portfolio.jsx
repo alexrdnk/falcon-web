@@ -1,4 +1,4 @@
-import React from 'react';
+import {useEffect} from 'react';
 import {Link} from 'react-router-dom'
 import './Portfolio.scss'
 import Drone from "./images/drone.png"
@@ -73,7 +73,9 @@ export default function Portfolio() {
           }
         ]
       };
-
+ useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className='portfolio'>
         <div className="portfolio-wrap">

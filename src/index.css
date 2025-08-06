@@ -58,9 +58,11 @@ html, body {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
+    overflow-y: auto;
+
   }
   
   .main {
 	flex: 1;
-	padding-top: 80px; /* Dodajemy padding-top dla fixed header */
+	padding-top: 80px; 
   }
