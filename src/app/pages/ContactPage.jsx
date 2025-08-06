@@ -1,5 +1,5 @@
 import React from 'react'
-import Contact from '../components/Contact/Contact'
+import Contact from '../../components/ContactPage/Contact/Contact.jsx'
 
 export default function ContactPage() {
   return (

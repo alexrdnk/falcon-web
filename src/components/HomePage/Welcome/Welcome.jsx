@@ -1,5 +1,5 @@
 import React from 'react'
-import backgroundImage from '../../images/img.png'
+import backgroundImage from './images/img.png'
 import "./Welcome.scss"
 
 export default function Welcome() {

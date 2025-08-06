@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Team.scss';
-import LinkedIn from "../Projects/images/linkedIn.svg?react";
-import GitHub from "../Projects/images/github.svg?react";
-import Avatar from "../Projects/images/avatar.png";
+import LinkedIn from "../../PortfolioPage/Projects/images/linkedIn.svg?react";
+import GitHub from "../../PortfolioPage/Projects/images/github.svg?react";
+import Avatar from "../../PortfolioPage/Projects/images/avatar.png";
 
 export default function Team() {
   const [activeFilter, setActiveFilter] = useState('Wszyscy');

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import Logo from '../../images/Logo2.svg';
+import Logo from '../Header/images/Logo2.svg';
 import './Header.scss';
 
 const Header = () => {

@@ -1,9 +1,9 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
 import './BlogEvents.scss'
-import EventImage1 from "../../images/IMG_20250604_112750590_AE.jpg"
-import EventImage2 from "../../images/IMG_2308.jpg"
-import EventImage3 from "../../images/1000007190.jpg"
+import EventImage1 from "../images/IMG_20250604_112750590_AE.jpg"
+import EventImage2 from "../images/IMG_2308.jpg"
+import EventImage3 from "../images/1000007190.jpg"
 
 
 export default function BlogEvents() {

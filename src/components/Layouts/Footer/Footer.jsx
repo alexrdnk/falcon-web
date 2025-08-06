@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Footer.scss"
-import FalconLogoText from '../../images/Logo.svg?react'
-import FalconLogo from '../../images/Logo2.svg?react'
+import FalconLogoText from './images/Logo.svg?react'
+import FalconLogo from './images/Logo2.svg?react'
 import PWRLogo from './images/PWRLogo.svg?react';
 import FacebookIcon from './images/FacebookIcon.svg?react';
 import InstagramIcon from './images/InstagramIcon.svg?react';
@@ -43,7 +43,7 @@ export default function Footer() {
             <div className="footer-links">
               <h3 className="links-title">Nawigacja</h3>
               <ul className="links-list">
-                <li><a href="/" className="footer-link">O nas</a></li>
+                <li><a href="/website/public" className="footer-link">O nas</a></li>
                 <li><a href="/portfolio" className="footer-link">Portfolio</a></li>
                 <li><a href="/team" className="footer-link">Team</a></li>
                 <li><a href="/blog" className="footer-link">Blog</a></li>

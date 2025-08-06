@@ -7,11 +7,11 @@ import PortfolioPage from "./Pages/PortfolioPage.jsx";
 import BlogPage from "./Pages/BlogPage.jsx";
 import TeamPage from "./Pages/TeamPage.jsx";
 import "./App.css"
-import "./index.css"
-import Footer from "./components/Footer/Footer.jsx";
-import Header from "./components/Header/Header.jsx";
-import Projects from "./components/Projects/Projects.jsx";
-import Events from "./components/Events/Events.jsx";
+import "../../index.css"
+import Footer from "../components/Layouts/Footer/Footer.jsx";
+import Header from "../components/Layouts/Header/Header.jsx";
+import Projects from "../components/PortfolioPage/Projects/Projects.jsx";
+import Events from "../components/BlogPage/Events/Events.jsx";
 
 function ScrollToTop() {
   const { pathname } = useLocation()

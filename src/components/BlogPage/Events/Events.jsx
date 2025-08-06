@@ -1,11 +1,11 @@
 import React from 'react'
 import { useParams } from 'react-router-dom';
-import EventImage1 from "../../images/IMG_20250604_112750590_AE.jpg"
-import EventImage2 from "../../images/IMG_2308.jpg"
-import EventImage3 from "../../images/1000007190.jpg"
-import Avatar from "../Projects/images/avatar.png"
-import LinkedIn from "../Projects/images/linkedIn.svg?react"
-import GitHub from "../Projects/images/github.svg?react"
+import EventImage1 from "../images/IMG_20250604_112750590_AE.jpg"
+import EventImage2 from "../images/IMG_2308.jpg"
+import EventImage3 from "../images/1000007190.jpg"
+import Avatar from "../../PortfolioPage/Projects/images/avatar.png"
+import LinkedIn from "../../PortfolioPage/Projects/images/linkedIn.svg?react"
+import GitHub from "../../PortfolioPage/Projects/images/github.svg?react"
 import "./Events.scss"
 
 export default function Events() {
