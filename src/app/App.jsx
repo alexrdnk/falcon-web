@@ -1,11 +1,11 @@
 
 import { Routes, Route, useLocation, Router } from "react-router-dom";
 import { useEffect } from "react";
-import HomePage from './Pages/HomePage.jsx'
-import ContactPage from './Pages/ContactPage.jsx'
-import PortfolioPage from "./Pages/PortfolioPage.jsx";
-import BlogPage from "./Pages/BlogPage.jsx";
-import TeamPage from "./Pages/TeamPage.jsx";
+import HomePage from './pages/HomePage.jsx'
+import ContactPage from './pages/ContactPage.jsx'
+import PortfolioPage from "./pages/PortfolioPage.jsx";
+import BlogPage from "./pages/BlogPage.jsx";
+import TeamPage from "./pages/TeamPage.jsx";
 import "./App.css"
 import "../../index.css"
 import Footer from "../components/Layouts/Footer/Footer.jsx";
