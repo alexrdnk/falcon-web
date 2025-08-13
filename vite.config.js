@@ -5,4 +5,21 @@ import svgr from 'vite-plugin-svgr';
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), svgr()],
+  build: {
+    outDir: 'dist',
+    sourcemap: false,
+    rollupOptions: {
+      output: {
+        manualChunks: undefined,
+      },
+    },
+  },
+  server: {
+    host: '0.0.0.0',
+    port: process.env.PORT || 5173,
+  },
+  preview: {
+    host: '0.0.0.0',
+    port: process.env.PORT || 4173,
+  },
 })
