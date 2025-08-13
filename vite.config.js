@@ -21,6 +21,12 @@ export default defineConfig({
   preview: {
     host: '0.0.0.0',
     port: process.env.PORT || 4173,
-    allowedHosts: ['healthcheck.railway.app', 'localhost', '127.0.0.1'],
+    allowedHosts: [
+      'healthcheck.railway.app', 
+      'localhost', 
+      '127.0.0.1',
+      'falcon-web-production.up.railway.app',
+      '.railway.app'
+    ],
   },
 })
